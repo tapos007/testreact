@@ -1,0 +1,5 @@
+{
+  "appService.zipIgnorePattern": ["node_modules{,/**}", ".vscode{,/**}"],
+  "appService.defaultWebAppToDeploy": "/subscriptions/4f384295-e86a-420e-ad8c-c1e262b155f0/resourceGroups/taposfrontend_group/providers/Microsoft.Web/sites/taposfrontend",
+  "appService.deploySubpath": "build"
+}
