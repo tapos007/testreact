@@ -37,8 +37,5 @@
       "last 1 safari version"
     ]
   },
-  "transformIgnorePatterns": [
-    "node_modules/(?!axios)/"
-  ],
   "proxy": "https://localhost:7004"
 }
