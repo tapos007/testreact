@@ -1,6 +1,6 @@
-import "./App.css";
 import axios from "axios";
 import { useState } from "react";
+import "./App.css";
 
 function App() {
   const [username, setUserName] = useState(0);
