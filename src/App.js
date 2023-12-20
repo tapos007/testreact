@@ -1,22 +1,12 @@
-import logo from "./logo.svg";
 import "./App.css";
-import Cookies from "js-cookie";
 import axios from "axios";
 import { useState } from "react";
-function getCookieValue(name) {
-  const value = document.cookie;
-  const parts = value.split(`; ${name}=`);
-  if (parts.length === 2) return parts.pop().split(";").shift();
-}
-function App() {
-  let info = getCookieValue(".AspNet.ApplicationCookie"); // => 'value'
 
-  console.log("tapos:" + info);
+function App() {
   const [username, setUserName] = useState(0);
   const shoot = async () => {
     try {
       axios.defaults.withCredentials = true;
-      axios.defaults.headers.common[".AspNet.ApplicationCookie"] = info;
       const post = await axios.get(
         `https://app2.learnwithtapos.com/WeatherForecast/get-from-api`
       );
